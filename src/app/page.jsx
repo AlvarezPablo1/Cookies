@@ -1,8 +1,11 @@
+
 import ContactUs from "@/components/contactUs/ContactUs";
 import Adventages from "@/components/cookiesAdventages/Adventages";
 import Description from "@/components/description/Description";
 import LimitedEdition from "@/components/limitedEdition/LimitedEdition";
 import PremiumProduct from "@/components/premiumProduct/PremiumProduct";
+
+
 
 export default function Home() {
   return (
@@ -12,6 +15,7 @@ export default function Home() {
       <LimitedEdition/>
       <Adventages/>
       <ContactUs/>
+
     </main>
   );
 }

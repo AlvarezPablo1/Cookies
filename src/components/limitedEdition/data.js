@@ -1,4 +1,4 @@
-export const data = [
+const limitedEdition = [
   {
     id: 1,
     img: "/product/product.png",
@@ -23,4 +23,15 @@ export const data = [
     name: "FRIED BANANA",
     price: "US$60.00 - US$300.00",
   },
+  {
+    id: 4,
+    img: "/product/product.png",
+    description: "(IRENE OG X ZKITTLEZ) X GELATO41",
+    type: "cookies",
+    name: "FRIED BANANA",
+    price: "US$60.00 - US$300.00",
+  },
 ];
+
+
+export {limitedEdition}

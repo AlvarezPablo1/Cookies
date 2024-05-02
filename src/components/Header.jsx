@@ -9,7 +9,7 @@ const Header = () => {
         <Image src={logo} alt='logo'/>
       </section>
       <section className='text-[12px] md:text-[16px] lg:text-[23px] font-[Barlow-800]'> 
-        <p>LET IT GROW WITH AUTHENTIC <span className='text-[#0EA5E9] underline'>COOKIES ORIGINALS!</span></p>
+        <p>LET IT GROW WITH AUTHENTIC <span className='text-[#0EA5E9] underline '>COOKIES ORIGINALS!</span></p>
       </section>
       <section className='hidden md:block'>
         <Button text={"SHOP NOW"}/>

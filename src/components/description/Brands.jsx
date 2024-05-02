@@ -1,4 +1,4 @@
-import InfiniteSlider from "../carousel/InfiniteSlider"
+import InfiniteSlider from "./InfiniteSlider"
 
 const Brands = () => {
   return (

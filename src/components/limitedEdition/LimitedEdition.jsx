@@ -1,6 +1,8 @@
-import Carousel from "../carousel/Carousel"
+
 import lemonnadeBg from '../../../public/bg/lemonnade-bg.png'
 import Image from "next/image"
+import CarouseLimitedEdition from './CarouselLimitedEdition'
+
 const LimitedEdition = () => {
   return (
     <div className="relative overflow-x-hidden bg-[#FFDA03] py-20">
@@ -13,7 +15,7 @@ const LimitedEdition = () => {
         <p className="text-[25px] md:text-[30px] ">NEW LIMITED EDITION!</p>
         <p className="text-[50px] md:text-[70px]">LEMONNADE</p>
       </section>
-      <Carousel/>
+      <CarouseLimitedEdition/>
       </div>
     </div>
     
