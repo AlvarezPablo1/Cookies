@@ -45,7 +45,7 @@ const CarouselPremium = () => {
                 <p className="text-[13px]">{d.price}</p>
               </section>
               <section className={`bg-[#01A0DC] text-center py-2 text-[#000]`}>
-                <p>BUY NOW</p>
+                <p className="cursor-pointer">BUY NOW</p>
               </section>
             </div>
           </div>

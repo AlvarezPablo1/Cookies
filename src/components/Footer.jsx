@@ -18,7 +18,7 @@ const Footer = () => {
         </section>
       </section>
       <section className='flex flex-col justify-center items-center text-center'>
-        <p className='mb-10 mt-8 font-[Barlow-500]'>For customer support send an email to <span className='text-[#0FA5E9]'>seeds@cookies.com</span></p>
+        <p className='mb-10 mt-8 font-[Barlow-500]'>For customer support send an email to <span className='text-[#0FA5E9] cursor-pointer'>seeds@cookies.com</span></p>
         <p className='font-[Barlow-500] text-[14px]'>COPYRIGHT © · COOKIES SEED BANK. ALL RIGHTS RESERVED.</p>
         <section className='w-[300px] text-[12px] md:text-[14px] md:w-[600px] lg:w-[890px]'>
           <p >This product is not for use by or sale to persons under the age of 18. This product should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. 
@@ -28,12 +28,12 @@ const Footer = () => {
         </section>
       </section>
       <section className='flex mt-10 justify-center items-center text-[6px] md:text-[15px] gap-x-5 text-[#0FA5E9]'>
-        <p>Privacy</p>
-        <p> Disclaimer</p>
-        <p> Shipping Policy</p>
-        <p> Return Policy</p>
-        <p> Refund Policy</p>
-        <p> Terms & Conditions</p>
+        <p className='cursor-pointer'>Privacy</p>
+        <p className='cursor-pointer'> Disclaimer</p>
+        <p className='cursor-pointer'> Shipping Policy</p>
+        <p className='cursor-pointer'> Return Policy</p>
+        <p className='cursor-pointer'> Refund Policy</p>
+        <p className='cursor-pointer'> Terms & Conditions</p>
       </section>
     </div>
   )
