@@ -10,6 +10,7 @@ import PremiumProduct from "@/components/premiumProduct/PremiumProduct";
 export default function Home() {
   return (
     <main className="bg-[#121212]   ">
+      
       <Description/>
       <PremiumProduct/>
       <LimitedEdition/>
