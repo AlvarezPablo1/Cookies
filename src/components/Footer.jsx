@@ -27,7 +27,7 @@ const Footer = () => {
         </section>
       </section>
       <section className='flex flex-col justify-center items-center text-center'>
-        <p className='mb-10 mt-8 font-[Barlow-500]'>For customer support send an email to <span className='text-[#0FA5E9] cursor-pointer'>seeds@cookies.com</span></p>
+        <p className='mb-10 mt-8 font-[Barlow-500]'>For customer support send an email to <a className='text-[#0FA5E9] cursor-pointer' href='mailto:seeds@cookies.com'>seeds@cookies.com</a></p>
         <p className='font-[Barlow-500] text-[14px]'>COPYRIGHT © · COOKIES SEED BANK. ALL RIGHTS RESERVED.</p>
         <section className='w-[300px] text-[12px] md:text-[14px] md:w-[600px] lg:w-[890px]'>
           <p >This product is not for use by or sale to persons under the age of 18. This product should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. 

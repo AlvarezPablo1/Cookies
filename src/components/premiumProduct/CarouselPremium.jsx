@@ -32,7 +32,7 @@ const CarouselPremium = () => {
 
   return (
     <div className="overflow-x-hidden flex relative z-0">
-      <div className="flex gap-x-8 snap-x snap-mandatory overflow-x-hidden"  ref={carouselRef}>
+      <div className="flex gap-x-8 snap-x snap-mandatory overflow-x-hidden" ref={carouselRef}>
         {data.map((d) => (
           <div key={d.id} className="snap-start">
             <div className="border border-[#01A0DC] relative z-50 bg-black w-[217px]">
@@ -42,7 +42,7 @@ const CarouselPremium = () => {
               <section className="text-center">
                 <p className="text-[13px]">{d.description}</p>
                 <p className={`text-[#01A0DC] font-[Barlow-600]`}>{d.type}</p>
-                <p className="text-[25px]">{d.name}</p>
+                <p className="text-[25px] h-[75px]">{d.name}</p>
                 <p className="text-[13px]">{d.price}</p>
               </section>
               <section className={`bg-[#01A0DC] text-center py-2 text-[#000]`}>
