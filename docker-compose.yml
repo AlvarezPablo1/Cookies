@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    image: uo-cookies
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+        - .:/app/frontend
+        - /app/frontend/node_modules
+        - /app/frontend/.next
+    ports:
+      - "3004:8080"

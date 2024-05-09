@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { data } from "./data"
 import { useRef } from "react";
+import Link from "next/link";
 
 
 const CarouselPremium = () => {
@@ -45,7 +46,7 @@ const CarouselPremium = () => {
                 <p className="text-[13px]">{d.price}</p>
               </section>
               <section className={`bg-[#01A0DC] text-center py-2 text-[#000]`}>
-                <p className="cursor-pointer">BUY NOW</p>
+                <Link href="https://seeds.cookies.co/" className="cursor-pointer">BUY NOW</Link>
               </section>
             </div>
           </div>

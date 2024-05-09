@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { useRef } from "react";
 import { limitedEdition } from "./data";
+import Link from "next/link";
 
 
 
@@ -50,7 +51,7 @@ const CarouseLimitedEdition = () => {
                 <p className="text-[13px]">{d.price}</p>
               </section>
               <section className={`bg-[#ffff] text-center py-2 text-[#000]`}>
-                <p className="cursor-pointer">BUY NOW</p>
+                <Link href={"https://seeds.cookies.co/product-category/lemonnade/"} className="cursor-pointer">BUY NOW</Link>
               </section>
             </div>
           </div>

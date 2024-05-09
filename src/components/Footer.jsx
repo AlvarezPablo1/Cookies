@@ -3,7 +3,8 @@ import logo from '../../public/logo.png'
 import twitter from '../../public/media/twitter.png'
 import linkedin from '../../public/media/linkedin.png'
 import tiktok from '../../public/media/tiktok.png'
-import youtube from '../../public/media/youtube.png'
+import facebook from '../../public/media/facebook.webp'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -11,10 +12,18 @@ const Footer = () => {
       <section className='flex flex-col md:flex-row items-center justify-between gap-y-5 md:px-20'>
         <Image src={logo} alt='logo'/>
         <section className='flex items-center gap-x-14'>
-        <Image src={twitter} alt='social' className='cursor-pointer'/>
-        <Image src={linkedin} alt='social' className='cursor-pointer'/>
-        <Image src={tiktok} alt='social' className='cursor-pointer'/>
-        <Image src={youtube} alt='social' className='cursor-pointer'/>
+        <Link href={"https://twitter.com/cookiesglobal"} target='_blank'>
+          <Image src={twitter} alt='social' className='cursor-pointer'/>
+        </Link>
+        <Link href={"https://www.linkedin.com/company/cookiescalifornia/"} target='_blank'>
+          <Image src={linkedin} alt='social' className='cursor-pointer'/>
+        </Link>
+        <Link href={"https://www.tiktok.com/@cookiesenterprises?_t=8YtIU627udq&_r=1"} target='_blank'>
+          <Image src={tiktok} alt='social' className='cursor-pointer'/>
+        </Link>
+        <Link href={"https://www.facebook.com/CookiesEnterprises/"} target='_blank'>
+          <Image src={facebook} alt='social' className='cursor-pointer' width={22} height={22}/>
+        </Link>
         </section>
       </section>
       <section className='flex flex-col justify-center items-center text-center'>

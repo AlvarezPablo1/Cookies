@@ -12,7 +12,7 @@ const Header = () => {
         <p>LET IT GROW WITH AUTHENTIC <span className='text-[#0EA5E9] underline '>COOKIES ORIGINALS!</span></p>
       </section>
       <section className='hidden md:block'>
-        <Button text={"SHOP NOW"}/>
+        <Button text={"SHOP NOW"} link={"https://seeds.cookies.co/"} />
       </section>
     </div>
   )

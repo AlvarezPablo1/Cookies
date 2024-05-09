@@ -13,7 +13,7 @@ const PremiumProduct = () => {
         <p className="text-[#0EA5E9] font-[Barlow-600] text-[25px] md:text-[30px]">PREMIUM GENETICS</p>
         <p className=" text-[60px] md:text-[70px] font-[Barlow-900]">COOKIES ORIGINALS</p>
         <p className="text-[20px  ] md:text-[26px] md:w-[609px] pb-6">Our best-in-class in-house cultivation, global varieties, and full lineup of strain-specific products. </p>
-        <Button text={"BUY NOW"}/>
+        <Button text={"BUY NOW"} link={"https://seeds.cookies.co/"} />
       </div>
         <CarouselPremium/>
     </div>

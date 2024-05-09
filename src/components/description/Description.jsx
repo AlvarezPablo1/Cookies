@@ -17,7 +17,7 @@ const Description = () => {
         <section>
           <p className="text-[20px] text-white md:w-[21rem] lg:w-auto">Federally legal. Legit quality strains. Best-in-class prices.</p>
         </section>
-        <Button text={"SHOP NOW"}/>
+        <Button text={"SHOP NOW"} link={"https://seeds.cookies.co/"} />
       </div>
       <div className="block md:hidden z-0">
         <video src="/fondo.mp4" autoPlay loop muted className="w-full">
