@@ -1,41 +1,52 @@
 'use client'
 import Image from "next/image"
 import { data } from "./data"
-import { useRef } from "react";
 import Link from "next/link";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 const CarouselPremium = () => {
   
-  const carouselRef = useRef(null);
-
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      const scrollWidth = carouselRef.current.scrollWidth;
-      const clientWidth = carouselRef.current.clientWidth;
-      const maxScrollLeft = scrollWidth - clientWidth;
-
-      carouselRef.current.scrollBy({
-        left: 300,
-        behavior: "smooth",
-      });
-
-      // Verificar si se ha llegado al final
-      if (carouselRef.current.scrollLeft >= maxScrollLeft) {
-        carouselRef.current.scrollTo({
-          left: 0,
-          behavior: "smooth",
-        });
-      }
-    }
-  }
-
   return (
-    <div className="overflow-x-hidden flex relative z-0">
-      <div className="flex gap-x-8 snap-x snap-mandatory overflow-x-hidden" ref={carouselRef}>
-        {data.map((d) => (
-          <div key={d.id} className="snap-start">
-            <div className="border border-[#01A0DC] relative z-50 bg-black w-[217px]">
+    <Swiper
+      // Install Swiper modules
+      modules={[Autoplay, A11y]}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+      }}
+      breakpoints= {{
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024:{
+          slidesPerView:2,
+        },
+        1440:{
+          Navigation,
+          slidesPerView:3,
+        },
+        2560:{
+          slidesPerView:4
+        }
+      }}
+    >
+        {data.map((d) => {
+
+          return(
+            <SwiperSlide key={d.id}>
+            <div className="border border-[#01A0DC] relative z-50 bg-black w-[217px] ml-14 min-[375px]:ml-20 min-[425px]:ml-24 min-[1024px]:ml-0">
               <section>
                 <Image src={d.img} width={228} height={228} alt="premium products" />
               </section>
@@ -49,13 +60,11 @@ const CarouselPremium = () => {
                 <Link href="https://seeds.cookies.co/" className="cursor-pointer">BUY NOW</Link>
               </section>
             </div>
-          </div>
-        ))}
-      </div>
-      <section className="absolute flex flex-col justify-center right-0 h-full shadow-[280px_000px_50px_300px] md:p-5 md:shadow-[250px_000px_50px_300px] shadow-black md:shadow-black bg-black z-50">
-        <button className='text-[4rem] text-[#01A0DC]' onClick={scrollRight}>{'>'}</button>
-      </section>
-    </div>
+          </SwiperSlide>
+          )
+          
+        })}
+        </Swiper>
   );
 };
 export default CarouselPremium;

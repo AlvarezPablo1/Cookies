@@ -31,8 +31,6 @@ const limitedEdition = [
     name: "Crispy Sugar",
     price: "US$50.00 - US$75.00",
   },
-
-/*
   {
     id: 5,
     img: "/product/kings-juice.webp",
@@ -64,7 +62,7 @@ const limitedEdition = [
     type: "Lemonnade",
     name: "Limousine",
     price: "US$50.00 - US$75.00",
-  },*/
+  },
 ];
 
 
